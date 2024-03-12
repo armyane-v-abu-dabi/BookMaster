@@ -24,5 +24,11 @@ namespace BookMaster
         {
             InitializeComponent();
         }
+
+        private void ExitMi_Click(object sender, RoutedEventArgs e)
+        {
+            //Закрыавет текущее окно .
+            Close();
+        }
     }
 }

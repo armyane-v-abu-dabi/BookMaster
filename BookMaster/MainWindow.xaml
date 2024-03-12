@@ -20,8 +20,8 @@
         <Menu>
             <MenuItem Header="File">
                 <MenuItem Header="Login"/>
-                <MenuItem Header="Logout"/>
-                <MenuItem Header="Close"/>
+                <MenuItem Header="Logout" Visibility=" Collapsed"/>
+                <MenuItem Name="ExitMi" Header=" Close" Click="ExitMi_Click"/>
 
             </MenuItem>
             <MenuItem Header="Library">
