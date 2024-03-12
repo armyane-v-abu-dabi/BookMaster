@@ -5,8 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BookMaster"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Bookmaster3000"
+        MinHeight="720" MinWidth="1280"
+        MaxHeight="1080" MaxWidth="1920"
+        WindowStartupLocation="CenterScreen"
+        >
+    
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <!--Меню-->
+        <Menu>
+            <MenuItem Header="File">
+                <MenuItem Header="Login"/>
+                <MenuItem Header="Logout"/>
+                <MenuItem Header="Close"/>
+
+            </MenuItem>
+            <MenuItem Header="Library">
+                <MenuItem Header="Manage Customers"/>
+                <MenuItem Header="Circulation"/>
+                <MenuItem Header="Reports"/>
+                
+                
+                
+            </MenuItem>
+        </Menu>
     </Grid>
 </Window>
