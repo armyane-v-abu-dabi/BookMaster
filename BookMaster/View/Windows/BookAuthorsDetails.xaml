@@ -1,0 +1,35 @@
+﻿<Window x:Class="BookMaster.View.Windows.BookAuthorsDetails"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookMaster.View.Windows"
+        mc:Ignorable="d"
+        Title="BookAuthorsDetails" Height="500" Width="500">
+    <Grid Margin="20" Name="AuthorsGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="70" />
+        </Grid.RowDefinitions>
+        
+        <ComboBox Name="AuthorCmb" SelectionChanged="AuthorCmb_SelectionChanged"/>
+        <TextBlock Text="{Binding Author.BirthDay}" Grid.Row="2"/>
+        <TextBlock Text="Bio" Grid.Row="4"/>
+        <TextBlock Text="{Binding Author.Bio}" Grid.Row="6"/>
+        <TextBlock  Grid.Row="8">
+            <Hyperlink Click="Hyperlink_Click">
+                <TextBlock Text="Learn more on Wikipedia"/>
+            </Hyperlink>
+        </TextBlock>
+        <Button Content="Close" Name="CloseBtn" Grid.Row="10" Click="CloseBtn_Click"/>
+    </Grid>
+</Window>

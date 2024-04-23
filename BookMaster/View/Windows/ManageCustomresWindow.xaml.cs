@@ -10,25 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace BookMaster
+namespace BookMaster.View.Windows
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для ManageCustomresWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ManageCustomresWindow : Window
     {
-        public MainWindow()
+        public ManageCustomresWindow()
         {
             InitializeComponent();
-        }
-
-        private void ExitMi_Click(object sender, RoutedEventArgs e)
-        {
-            //Закрыавет текущее окно .
-            Close();
         }
     }
 }
