@@ -83,5 +83,12 @@ namespace BookMaster.View.Windows
             ReportsWindow reportsWindow = new ReportsWindow();
             reportsWindow.Show();
         }
+
+        private void FindBtn_Click(object sender, RoutedEventArgs e)
+        {
+            string title = TitleTb.Text;
+            string author = AuthorTb.Text;
+            bookAuthorsLv.ItemsSource = App._context.BookAuthor.Where(ba => ba.Book.Title.Contains(title) && ba.Author.Lastname.Contains(author)).ToList();
+        }
     }
 }
